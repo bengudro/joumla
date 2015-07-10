@@ -1,0 +1,221 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Web1 | Travail Mi-Session | Benjamin Goudreault */
+/*
+ * Version finale 2 ! La dernière :)
+ * Cette fois, j'ai ajouté un 'sticky-footer' !
+ */
+
+/******************************************{ « RESET.CSS » D’ERIC MEYER }*****/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/***********************************************************{ MON STYLE }*****/
+
+
+/*-----------------------------------------------------------{ CLEARFIX }----*/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/*********************************************************{ MES CLASSES }*****/
+
+.current { color: #F26521; }
+.orange { color: #F26521; }
+.paddingBottom { padding-bottom: 20px; }
+img.picleft { float: left; margin: 0 20px 10px 0;
+            border-top: 1px solid #4F4F4F; border-bottom: 1px solid #4C4C4C;
+            border-left: 1px solid #4F4F4F; border-right: 1px solid #4C4C4C;
+            border-radius: 1px; }
+img.imgleft { float: left; margin: -4px 10px 0 -6px; }
+
+/***************************************************************{ BODY] }*****/
+
+html, body { height: 100%; }
+
+body { background: #4C4C4C ; color: #FFF; font-size: 11px;
+        font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+        outline: 0; }
+
+/************************************************************{ DEFAULTS }*****/
+
+h1, h2, h3, h4, h5, h6 { font-weight: 400; }
+h2 { font-size: 18px; margin-bottom: 20px; }
+b, strong { font-weight: 700; }
+a:link,    li a:link,
+a:visited, li a:visited { text-decoration: none; color: inherit; }
+a:hover,   li a:hover   { color: #F26521; border-bottom: 1px solid #F26521; }
+a:active { position: relative; top: 1px; left: 1px; }
+
+p { margin-bottom: 1.1em; }
+p a:active { position: relative; top: 1px; left: 1px; }
+
+/***********************************{ YELLOW TOP BORDER - FOR ALL PAGES }*****/
+
+#top-border { background:url(../img/yellow-square-texture.gif); height: 43px; }
+
+/*********************************************************{ SPLASH-PAGE }*****/
+
+#splashHeader { width: 402px; height: 166px; margin: auto; color: #A0A0A0; }
+#splashLogo { background: url(../img/joumla-logo.png);
+position: relative; top: 109px;
+display: block; width: 182px; height: 30px;
+text-indent: -9999px; overflow: hidden;
+}
+#splashImage a { background: url(../img/splash-image-sprite.jpg);
+display: block; width: 392px; height: 260px;
+border-top: 1px solid #A6A6A6; border-bottom: 1px solid #A6A6A6;
+border-left: 1px solid #9B9B9B; border-right: 1px solid #9B9B9B;
+border-radius: 1px;
+margin: auto;
+text-indent: -9999px; overflow: hidden;
+}
+#splashImage a:hover { background:url(../img/splash-image-sprite.jpg) 0 -260px;
+border-top: 1px solid #D3D3D3; border-bottom: 1px solid #D3D3D3;
+border-left: 1px solid #C7C7C7; border-right: 1px solid #C7C7C7;
+color: #4C4C4C;
+}
+
+/**************************************************************{ HEADER }*****/
+
+#header { background: #4C4C4C; height: 131px; color: #A0A0A0; }
+    #logo {
+    width: 182px; height: 30px;
+    position: relative; top: 51px; left: 24px;
+    }
+    #logo a { background: url(../img/joumla-logo.png);
+    display: block; width: 182px; height: 30px;
+    text-indent: -9999px; overflow: hidden;
+    border: none;
+    }
+#mainNav { background: #FFF;
+border-bottom: 11px solid #F26521;
+height: 46px;
+    }
+    #menu { width: 500px; position: relative; top: 18px; left: 28px; }
+    #menu li { display: inline; margin-right: 22px; color: #4C4C4C; }
+
+/*************************************************************{ GENERAL }*****/
+
+#container { background: url(../img/shadow.png) repeat-x;
+overflow: auto;
+padding-bottom: 30px;
+}
+#wrap {
+width: 450px;
+padding: 19px 32px;
+line-height: 1.35;
+}
+
+/*************************************************************{ ACCUEIL }*****/
+
+#accueil-container { background: url(../img/shadow.png) repeat-x;
+}
+#accueil-wrap {
+width: 782px;
+line-height: 1.35;
+}
+#left-column { background: #696D71 url(../img/shadow.png) repeat-x;
+width: 292px;
+padding: 19px 28px;
+float: left;
+}
+#left-column a:link, #left-column a:visited {
+text-decoration: none; color: #F0E50B;
+border-bottom: 1px solid #F0E50B;
+}
+#white-box { background: #FFF;
+margin: 90px auto 10px auto;
+width: 272px;
+padding: 10px;
+color: #4C4C4C;
+}
+#right-column {
+padding: 19px 32px;
+float: left;
+width: 370px;
+}
+#right-column p { margin-bottom: 0.5em; }
+
+/**************************************************************{ FOOTER }*****/
+
+#stickyFoooterHack { background: #696D71;
+min-height: 100%;
+}
+#stickyFoooterHack-accueil {
+background: #75797E url(../img/left-bg-accueil.png) repeat-y;
+min-height: 100%;
+}
+
+#footer { background: #4C4C4C;
+height: 16px;
+color: #A0A0A0;
+padding: 9px 0 5px 0;
+text-indent: 32px;
+position: relative;
+margin-top: -30px;
+clear: both;
+}
